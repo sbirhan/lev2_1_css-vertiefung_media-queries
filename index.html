@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lev2_1_css-vertiefung_media-queries</title>
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button onclick="resize_viewport(this, 'pc')"><img src="assets/img/icons8-laptop-96.png" alt=""></button>
+            <button onclick="resize_viewport(this, 'tablet-potrait')"><img src="assets/img/icons8-android-tablet-96.png" alt=""></button>
+            <button onclick="resize_viewport(this, 'tablet-landscape')"><img src="assets/img/icons8-android-tablet-96.png" alt="" style=" transform: rotate(270deg);"></button>
+            <button onclick="resize_viewport(this, 'iphone6-potrait')"><img src="assets/img/icons8-iphone-x-96.png" alt=""></button>
+            <button onclick="resize_viewport(this, 'iphone6-landscape')"><img src="assets/img/icons8-iphone-x-96.png" alt="" style=" transform: rotate(270deg);"></button>
+        </div>
+    </header>
+
+    <main class="grid-container"> 
+        <div class="article1">
+            <p class="title">Timeless Commandments</p>
+            <p class="text">Dieter Rams is one of the most influential designers of the 20th century. "An impenetrable confusion of forms, 
+                colours and noises.” promted him to find what "Good Design" is.</p>
+        </div>
+        <div class="article2">
+            <img class="funk" src="assets/img/braun-funk.png" alt="">
+        </div>
+        <div class="footer">
+            <img src="assets/img/icons8-facebook-f-64.png" alt="" class="facebook">
+            <img src="assets/img/icons8-twitter-squared-64.png" alt="" class="twitter">
+            <button class="left-arrow"><img src="assets/img/icons8-arrow-pointing-left-96.png" alt=""></button>
+            <button class="right-arrow"><img src="assets/img/icons8-arrow-96.png" alt=""></button>
+        </div>
+    </main>
+
+    <script src="assets/index.js"></script>
+
+</body>
+</html>
