@@ -20,6 +20,8 @@ header{
     height: 7vw;
     width: 37vw;
     margin-top: .5vw;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 1vw;
 }
 
 .navbar button{
@@ -28,6 +30,7 @@ header{
     margin-right: .5vw ;
     height: 6vw;
     width: 6vw;
+    border-radius: 50%;
 }
 
 img{
@@ -36,14 +39,11 @@ img{
 }
 
 .grid-container{
-    position: absolute;
     display: grid;
     width: 95vw;
     height: auto;
-    grid-template-rows: 40vh 40vh 12vh;
-    margin-left: .5vw;
-    margin-right: .5vw;
-    margin-top: -1vw;
+    grid-template-rows: 80vw 70vw 16vw;
+    margin: -1vw .5vw;
 }
 
 .article1{
@@ -51,8 +51,10 @@ img{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 2fr;
-    border: 1px solid rgb(224, 224, 224);
-    border-radius: 1vw 1vw 0 0;
+    border: 3px solid rgb(185, 185, 185);
+    border-bottom: none;
+    border-radius: 3vw 3vw 0 0; 
+    overflow: auto;
 }
 
 .title{
@@ -65,7 +67,7 @@ img{
 .text{
     grid-column: 2;
     grid-row: 3;
-    font-size: 2.5vw;
+    font-size: 4vw;
     font-weight: bold;
     color: rgb(83, 83, 83);
 }
@@ -73,12 +75,70 @@ img{
 .article2{
     grid-row: 2;
     background-color: rgb(224, 224, 224);
-    border: 1px solid rgb(224, 224, 224);
+    border: 3px solid rgb(185, 185, 185);
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.funk{
+    width: 100%;
+    height: auto;
 }
 
 .footer{
     grid-row: 3;
-    background-color: rgb(206, 169, 102);
+    background-color: rgb(224, 224, 224);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 0 0 1vw 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 3fr 3fr 5fr;
+    border: 3px solid rgb(185, 185, 185);
+    border-radius: 0 0 3vw 3vw;
+
+}
+
+footer button{
+    text-decoration: none;
+    height: 6vw;
+    width: 6vw;
+}
+
+.left-arrow{
+    grid-column: 4;
+    border: none;
+    background-color: transparent;
+    width: 16vw;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.right-arrow{
+    grid-column: 5;
+    border: none;
+    background-color: transparent;
+    width: 16vw;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.facebook{
+    grid-column: 1;
+    border: none;
+    background-color: transparent;
+    width: 8vw;
+    height: auto;
+    margin: 4vw 0vw;
+}
+
+.twitter{
+    grid-column: 2;
+    border: none;
+    background-color: transparent;
+    width: 8vw;
+    height: auto;
+    margin: 4vw 0vw;
 }
 
 
@@ -91,8 +151,8 @@ img{
     .grid-container{
         width: 97vw;
         height: 46vw;
-        grid-template-rows: 5vh 65vh 15vh 5vh;
-        grid-template-columns: 49vw 49vw;
+        grid-template-rows: 3vw 33vw 7.5vw 3vw;
+        grid-template-columns: 49.7vw 48.3vw;
         margin-top: 0;
     }
 
@@ -103,7 +163,7 @@ img{
         grid-template-columns: 1fr 4fr 1fr 1fr;
         grid-template-rows: 3fr 1fr 1fr 2fr;
         border: 1px solid rgb(224, 224, 224);
-        border-radius: 1vw 0 0 0;
+        border-radius: 0;
     }
 
     .title{
@@ -120,7 +180,6 @@ img{
         grid-row: 2;
         background-color: rgb(224, 224, 224);
         border: 1px solid rgb(224, 224, 224);
-        border-radius: 0 1vw 0 0;
     }
 
     .funk{
@@ -134,7 +193,7 @@ img{
         grid-column: 1 / span 2;
         grid-row: 3;
         background-color: rgb(224, 224, 224);
-        border: 1px solid rgb(224, 224, 224);
+        border: 3px solid rgb(185, 185, 185);
         border-radius: 0 0 1vw 1vw;
         display: grid;
         grid-template-columns: 1fr 1fr 5fr 1fr 1fr 7fr;
@@ -176,3 +235,47 @@ img{
 
 }
 
+@media screen and (min-width:1024px) and (max-width:1280px){
+    .grid-container{
+        height: 53.5vw;
+        grid-template-rows: 3vw 40vw 7.5vw 3vw;
+    }  
+}
+
+@media screen and (min-width:800px) and (max-width:1024px){
+    .grid-container{
+        height: 140vw;
+        grid-template-rows: 60vw 60vw 15vw 3vw;
+    } 
+
+    .title{
+        font-size: 9vw;
+    }
+
+    .text{
+        font-size: 3vw;
+    }
+    
+    .footer{
+        grid-template-columns: 1fr 1fr 2.5fr 1fr 1fr 7fr;
+    }
+
+    .left-arrow{
+        width: 12vw;
+    }
+
+    .right-arrow{
+        width: 12vw;
+    }
+
+    .facebook{
+        width: 6vw;
+        margin: 4vw 2vw;
+    }
+
+    .twitter{
+        width: 6vw;
+        margin: 4vw 2vw;
+    }
+
+}
